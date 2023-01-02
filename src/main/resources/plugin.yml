@@ -1,0 +1,6 @@
+name: BedWars1058-AdventureMode
+version: '${project.version}'
+main: me.notlewx.gamemode.Main
+prefix: BedWars1058-AdventureMode
+softdepend: [ BedWars1058 ]
+authors: [ NotLew_x ]
