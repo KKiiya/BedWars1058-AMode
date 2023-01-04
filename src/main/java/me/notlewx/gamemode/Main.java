@@ -16,6 +16,7 @@ public final class Main extends JavaPlugin {
         }
         else {
             System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars1058-AdventureMode] &aBedWars1058 found... Hooking!"));
+            System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars1058-AdventureMode] &aRunning on" + "&b" + getServer().getVersion()));
         }
         getServer().getPluginManager().registerEvents(new ArenaListener(this), this);
     }
