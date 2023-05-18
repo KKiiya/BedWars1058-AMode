@@ -9,16 +9,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 public class ArenaListener implements Listener {
-    private final Main main;
-    public ArenaListener(Main main) {
-        this.main = main;
-    }
+   
+
+    
+   
+
     @EventHandler
     public void onGameJoin(PlayerJoinArenaEvent e) {
         Player p = e.getPlayer();
         if (e.isSpectator()) {
             return;
         }
-        Bukkit.getScheduler().runTaskLater(this.main, () -> p.setGameMode(GameMode.ADVENTURE), 0L);
+        Bukkit.getScheduler().runTaskLater(Main.getPlugins(), () -> p.setGameMode(GameMode.ADVENTURE), 0L);
     }
 }
