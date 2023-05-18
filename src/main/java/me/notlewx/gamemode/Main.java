@@ -25,4 +25,10 @@ public final class Main extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+    
+    public static Main getPlugins() {
+
+       return Main.getPlugin(Main.class);
+
+    }
 }
