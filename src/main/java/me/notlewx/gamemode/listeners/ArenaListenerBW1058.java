@@ -8,12 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
-public class ArenaListener implements Listener {
-   
-
-    
-   
-
+public class ArenaListenerBW1058 implements Listener {
     @EventHandler
     public void onGameJoin(PlayerJoinArenaEvent e) {
         Player p = e.getPlayer();
