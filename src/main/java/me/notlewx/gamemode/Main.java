@@ -21,8 +21,8 @@ public final class Main extends JavaPlugin {
             System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars1058-AdventureMode] &aRunning on" + "&b" + getServer().getVersion()));
             getServer().getPluginManager().registerEvents(new ArenaListenerBW1058(), this);
         } else if (Bukkit.getPluginManager().isPluginEnabled("BedWars2023")){
-            System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars1058-AdventureMode] &aBedWars2023 found... Hooking!"));
-            System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars1058-AdventureMode] &aRunning on" + "&b" + getServer().getVersion()));
+            System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars2023-AdventureMode] &aBedWars2023 found... Hooking!"));
+            System.out.println(ChatColor.translateAlternateColorCodes('&', "[BedWars2023-AdventureMode] &aRunning on" + "&b" + getServer().getVersion()));
             getServer().getPluginManager().registerEvents(new ArenaListenerBW2023(), this);
             Bukkit.getServicesManager().getRegistration(BedWars.class).getProvider().getAddonsUtil().registerAddon(new Addon());
         }
